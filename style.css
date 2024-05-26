@@ -1,0 +1,324 @@
+
+body, ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Basic Styles */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #fff;
+    background-image: url('images/gray.avif'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  
+
+/* Header Styles */
+header {
+  background-image: url('images/h1.jpg'); /* Replace with the image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+   
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+  }
+
+  
+  /* ... (previous CSS rules) ... */
+  
+  
+  /* Navigation Styles */
+  nav {
+   
+    padding: 10px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    text-align: center;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #f4eeee;
+  }
+  
+  /* Sections Styles */
+  section {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  /* Container Styles */
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Flexbox for Gallery */
+  .image-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .image-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+  }
+  /* ... (previous CSS rules) ... */
+
+  section#contact {
+    padding: 50px 0;
+  }
+  
+  .contact-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .contact-form,
+  .map {
+    width: 48%; /* Adjust the width as needed */
+  }
+  
+  .contact-form h3,
+  .map h3 {
+    margin-bottom: 10px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+  }
+  
+  .map iframe {
+    border-radius: 5px;
+  }
+  
+
+/* Footer Styles */
+footer {
+  background-image: url('images/footimg.avif'); /* Replace 'background-image.jpg' with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo img {
+    max-width: 100px; /* Adjust the logo size */
+    height: auto;
+  }
+  
+  .social-media img {
+    width: 30px; /* Adjust social media icon size */
+    margin: 0 5px;
+  }
+  #services {
+    background-color: #ac9595;
+    padding: 50px 0;
+  }
+  
+  #services h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .service {
+    margin-bottom: 30px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service ul {
+   list-style: none;
+    margin-left: 20px;
+  }
+  
+  /* Gallery Section Styles */
+  #gallery {
+    padding: 50px 0;
+  }
+  
+  .image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .image-gallery img {
+    width: 300px;
+    margin: 10px;
+  }
+  
+  /* ... (previous CSS rules) ... */
+  .gallery {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .gallery h2 {
+    margin-bottom: 30px;
+    color: #FF1493;
+  }
+  
+  .image-gallery {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    justify-items: center;
+  }
+  
+  .image-gallery img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+/* Additional CSS for Service Cards */
+.service-packages {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.service-packages h2 {
+  margin-bottom: 30px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  width: 300px;
+  padding: 20px;
+  margin-bottom: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.service-card button {
+  padding: 10px 20px;
+  background-color: #FF1493;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.service-card button:hover {
+  background-color: #D1177D;
+}
+
+
+
+
+
+
+  /* Media Queries for Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust styles for smaller screens */
+    nav ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+    .container {
+      width: 90%; /* Adjust as needed */
+    }
+    
+    /* Adjustments for Home Section */
+    #home h1 {
+      font-size: 30px;
+    }
+    .footer-content{
+      margin-top: 163px;
+      padding-top: 30px;
+    }
+  
+  
+    
+  }
+
+  
+  @media screen and (max-width: 480px) {
+    /* Adjustments for Navigation */
+    nav ul li {
+      display: block;
+      margin: 10px 0;
+    }
+    
+    /* Adjustments for Container */
+    .container {
+      width: 90%; /
+    }
+    
+    /* Adjustments for Home Section */
+    #home h1 {
+      font-size: 24px;
+    }
+    
+    /* Adjustments for Services Section */
+    .service h3 {
+      font-size: 20px;
+    }
+    .contact-form,
+    
+  .map {
+    margin-bottom: 10px; 
+    
+  }
+ 
+  
+  }
+  
